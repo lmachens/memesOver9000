@@ -15,3 +15,13 @@ Now, you can generate the CSS files with:
 ```
 sass --watch input.sass style.css
 ```
+
+## Milestones
+
+- [ ] create base layout with SASS and HTML
+- [ ] add form without JavaScript and sample image
+- [ ] add preview image (Canvas) without JavaScript
+- [ ] create text in canvas on form change
+- [ ] add template image selector and make the form dynamic
+- [ ] add social buttons to header
+- [ ] make form persistent
