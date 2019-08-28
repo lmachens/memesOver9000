@@ -19,7 +19,7 @@ sass --watch input.sass style.css
 ## Milestones
 
 - [x] create base layout with SASS and HTML
-- [ ] add form without JavaScript and sample image
+- [x] add form without JavaScript and sample image
 - [ ] add preview image (Canvas) without JavaScript
 - [ ] create text in canvas on form change
 - [ ] add template image selector and make the form dynamic

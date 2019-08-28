@@ -10,6 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  color: $color5;
 }
 
 main {
@@ -24,6 +25,18 @@ footer {
 .generator {
   background: $color3;
   min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+
+  &__img {
+    max-width: 160px;
+  }
+
+  input {
+    margin-top: 4px;
+  }
 }
 
 .preview {
