@@ -7,13 +7,27 @@ const text1 = document.querySelector("#text-1");
 const text2 = document.querySelector("#text-2");
 const text3 = document.querySelector("#text-3");
 
+const generatorImage = document.querySelector(".generator__img");
+
 function updatePreview() {
+  previewCanvas.width = generatorImage.width * 4;
+  previewCanvas.height = generatorImage.height * 4;
+
   previewCanvasContext.clearRect(
     0,
     0,
     previewCanvas.width,
     previewCanvas.height
   );
+
+  previewCanvasContext.drawImage(
+    generatorImage,
+    0,
+    0,
+    previewCanvas.width,
+    previewCanvas.height
+  );
+
   previewCanvasContext.font = "60px Arial";
   previewCanvasContext.fillStyle = "white";
   previewCanvasContext.textAlign = "center";
@@ -29,3 +43,5 @@ function updatePreview() {
 text1.addEventListener("input", updatePreview);
 text2.addEventListener("input", updatePreview);
 text3.addEventListener("input", updatePreview);
+
+updatePreview();
