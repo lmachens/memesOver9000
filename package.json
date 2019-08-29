@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "build": "sass input.scss style.css"
+  }
+}
