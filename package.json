@@ -1,5 +1,22 @@
 {
+  "name": "memesOver9000",
+  "version": "1.0.0",
+  "description": "MemesOver9000 is a meme generator for the web. You can select your most favorite memes and change the text.",
   "scripts": {
     "build": "sass input.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmachens/memesOver9000.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmachens/memesOver9000/issues"
+  },
+  "homepage": "https://github.com/lmachens/memesOver9000#readme",
+  "devDependencies": {
+    "sass": "^1.22.10"
   }
 }
