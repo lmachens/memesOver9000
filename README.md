@@ -21,7 +21,7 @@ sass --watch input.sass style.css
 - [x] create base layout with SASS and HTML
 - [x] add form without JavaScript and sample image
 - [x] add preview image (Canvas) with sample JavaScript
-- [ ] create text in canvas on form change
+- [x] create text in canvas on form change
 - [ ] add template image selector and make the form dynamic
 - [ ] add social buttons to header
 - [ ] make form persistent
