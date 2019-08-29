@@ -22,6 +22,7 @@ sass --watch input.sass style.css
 - [x] add form without JavaScript and sample image
 - [x] add preview image (Canvas) with sample JavaScript
 - [x] create text in canvas on form change
+- [x] print sample image in canvas
 - [ ] add template image selector and make the form dynamic
 - [ ] add social buttons to header
 - [ ] make form persistent
