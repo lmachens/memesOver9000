@@ -1,7 +1,6 @@
 "use strict";
 
 const previewCanvas = document.querySelector(".preview__canvas");
-previewCanvas.width = 2000;
 const previewCanvasContext = previewCanvas.getContext("2d");
 
 function updatePreview() {
