@@ -63,10 +63,10 @@ main {
   &__img {
     max-width: 160px;
   }
-  &:focus,
-  :active {
-    outline: none;
-  }
+}
+
+summary {
+  outline: none;
 }
 
 .preview {
