@@ -1,4 +1,5 @@
-import { addTextInputListeners, updatePreview } from "./components/canvas.js";
+import { updatePreview } from "./components/canvas.js";
+import { initTextInputs } from "./components/form.js";
 
-addTextInputListeners();
+initTextInputs();
 updatePreview();
