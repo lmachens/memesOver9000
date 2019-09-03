@@ -10,8 +10,8 @@ const text3 = document.querySelector("#text-3");
 const generatorImage = document.querySelector(".generator__img");
 
 function updatePreview() {
-  previewCanvas.width = generatorImage.width * 4;
-  previewCanvas.height = generatorImage.height * 4;
+  previewCanvas.width = generatorImage.width;
+  previewCanvas.height = generatorImage.height;
 
   previewCanvasContext.clearRect(
     0,
@@ -28,16 +28,16 @@ function updatePreview() {
     previewCanvas.height
   );
 
-  previewCanvasContext.font = "50px Arial";
+  previewCanvasContext.font = "60px Arial";
   previewCanvasContext.fillStyle = "white";
   previewCanvasContext.textAlign = "center";
   previewCanvasContext.shadowColor = "black";
   previewCanvasContext.shadowBlur = 6;
   previewCanvasContext.shadowOffsetX = 3;
   previewCanvasContext.shadowOffsetY = 3;
-  previewCanvasContext.fillText(text1.value, 180, 300);
-  previewCanvasContext.fillText(text2.value, 400, 200);
-  previewCanvasContext.fillText(text3.value, 530, 300);
+  previewCanvasContext.fillText(text1.value, 100, 60);
+  previewCanvasContext.fillText(text2.value, 100, 100);
+  previewCanvasContext.fillText(text3.value, 100, 160);
 }
 
 text1.addEventListener("input", updatePreview);

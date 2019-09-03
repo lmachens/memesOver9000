@@ -6,41 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>MemesOver9000</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Corben:700|Nobile&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <section class="generator">
-        <h3>Template</h3>
+      <header>
+        <h1>~ MEMES OVER 9000 ~</h1>
+        <h2>
+          our memes are higher! <span class="ascii"> (ﾉ☉ヮ⚆)ﾉ ⌒*:･ﾟ✧</span>
+        </h2>
+      </header>
+      <section class="preview">
+        <canvas
+          id="meme"
+          class="preview__canvas"
+          width="500"
+          height="300"
+        ></canvas>
+      </section>
+      <section class="inputfields">
+        <h3>٩(^‿^)۶ ~ enter your text ~ ᕕ( ᐛ )ᕗ</h3>
+        <div class="inputwrapper">
+          <input
+            id="text-1"
+            class="inputwrapper__input"
+            type="text"
+            placeholder="Enter Text 1"
+          />
+          <input
+            id="text-2"
+            class="inputwrapper__input"
+            type="text"
+            placeholder="Enter Text 2"
+          />
+          <input
+            id="text-3"
+            class="inputwrapper__input"
+            type="text"
+            placeholder="Enter Text 3"
+          />
+        </div>
+      </section>
+      <details class="generator">
+        <summary>change ᕙ(⇀‸↼‶)ᕗ</summary>
         <img
           class="generator__img"
           src="assets/Distracted-Boyfriend.jpg"
           alt="Distracted Boyfriend"
         />
-        <h3>Input Fields</h3>
-        <input
-          id="text-1"
-          class="generator__input"
-          type="text"
-          placeholder="Enter Text 1"
-        />
-        <input
-          id="text-2"
-          class="generator__input"
-          type="text"
-          placeholder="Enter Text 2"
-        />
-        <input
-          id="text-3"
-          class="generator__input"
-          type="text"
-          placeholder="Enter Text 3"
-        />
-      </section>
-      <section class="preview">
-        <canvas class="preview__canvas" width="500" height="300"></canvas>
-      </section>
+      </details>
     </main>
-    <footer>Footer</footer>
     <script src="index.js"></script>
   </body>
 </html>
