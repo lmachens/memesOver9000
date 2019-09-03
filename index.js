@@ -10,8 +10,8 @@ const text3 = document.querySelector("#text-3");
 const generatorImage = document.querySelector(".generator__img");
 
 function updatePreview() {
-  previewCanvas.width = generatorImage.width * 4;
-  previewCanvas.height = generatorImage.height * 4;
+  previewCanvas.width = generatorImage.width;
+  previewCanvas.height = generatorImage.height;
 
   previewCanvasContext.clearRect(
     0,

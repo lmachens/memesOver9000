@@ -4,44 +4,105 @@
   box-sizing: border-box;
 }
 
+@keyframes bg-gradient {
+  0% {
+    background-position: 1% 0%;
+  }
+  50% {
+    background-position: 99% 100%;
+  }
+  100% {
+    background-position: 1% 0%;
+  }
+}
+
 body {
   margin: 0;
-  background: $color2;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  color: $color5;
+  color: #545454;
+  font-family: "Nobile", sans-serif;
+  background: linear-gradient(
+    314deg,
+    $aquamarine,
+    $green,
+    $yellow,
+    $red,
+    $purple
+  );
+  background-size: 400% 400%;
+  animation: bg-gradient 10s ease infinite;
+}
+
+header {
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: "Corben", cursive;
+  margin: 10px;
+}
+
+.ascii {
+  font-family: "Nobile", sans-serif;
 }
 
 main {
   display: flex;
+  flex-direction: column;
   flex-grow: 1;
+}
+
+.generator {
+  background: transparent;
+  min-width: 200px;
+  align-self: center;
+  padding: 10px;
+  &__img {
+    max-width: 160px;
+  }
+}
+
+summary {
+  outline: none;
+}
+
+.preview {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#meme {
+  max-width: 90%;
+  margin: auto;
+}
+
+.inputfields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+.inputwrapper {
+  &__input {
+    margin: 5px;
+    border: solid 5px $purple;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 18px;
+    transition: all 0.2s;
+    &:focus {
+      outline: none;
+      transform: scale(1.06);
+      border: solid 8px $red;
+    }
+  }
 }
 
 footer {
   background: $color4;
-}
-
-.generator {
-  background: $color3;
-  min-width: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-
-  &__img {
-    max-width: 160px;
-  }
-
-  &__input {
-    margin-top: 4px;
-  }
-}
-
-.preview {
-  flex-grow: 1;
-
-  &__canvas {
-  }
 }

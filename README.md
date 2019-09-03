@@ -13,7 +13,7 @@ npm i -g sass
 Now, you can generate the CSS files with:
 
 ```
-sass --watch input.sass style.css
+sass --watch input.scss style.css
 ```
 
 ## Milestones
