@@ -1,12 +1,11 @@
-import { getText } from "./meme.js";
+import { getText, getSrc, getTexts, getPositions } from "./meme.js";
 
 const previewCanvas = document.querySelector(".preview__canvas");
 const previewCanvasContext = previewCanvas.getContext("2d");
-const generatorImage = document.querySelector(".generator__img");
 
-export function updatePreview() {
-  previewCanvas.width = generatorImage.naturalWidth;
-  previewCanvas.height = generatorImage.naturalHeight;
+function render(memeImage) {
+  previewCanvas.width = memeImage.naturalWidth;
+  previewCanvas.height = memeImage.naturalHeight;
 
   previewCanvasContext.clearRect(
     0,
@@ -16,7 +15,7 @@ export function updatePreview() {
   );
 
   previewCanvasContext.drawImage(
-    generatorImage,
+    memeImage,
     0,
     0,
     previewCanvas.width,
@@ -30,7 +29,23 @@ export function updatePreview() {
   previewCanvasContext.shadowBlur = 6;
   previewCanvasContext.shadowOffsetX = 3;
   previewCanvasContext.shadowOffsetY = 3;
-  previewCanvasContext.fillText(getText(0), 400, 600);
-  previewCanvasContext.fillText(getText(1), 840, 390);
-  previewCanvasContext.fillText(getText(2), 1220, 510);
+
+  const textPositions = getPositions();
+  getTexts().forEach((text, index) => {
+    previewCanvasContext.fillText(
+      text,
+      textPositions[index].x,
+      textPositions[index].y
+    );
+  });
+}
+
+export function updatePreview() {
+  const memeSrc = getSrc();
+  const memeImage = new Image();
+  memeImage.src = memeSrc;
+
+  memeImage.addEventListener("load", () => {
+    render(memeImage);
+  });
 }
