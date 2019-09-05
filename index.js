@@ -1,5 +1,7 @@
 import { updatePreview } from "./components/canvas.js";
-import { initTextInputs } from "./components/form.js";
+import { renderMemeImages } from "./components/memes.js";
+import { renderMemeInputs } from "./components/meme.js";
 
-initTextInputs();
+renderMemeImages();
 updatePreview();
+renderMemeInputs();
