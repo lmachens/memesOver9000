@@ -1,4 +1,4 @@
-import { getText, getSrc, getTexts, getPositions } from "./meme.js";
+import { getSrc, getTexts, getPositions } from "./meme.js";
 
 const previewCanvas = document.querySelector(".preview__canvas");
 const previewCanvasContext = previewCanvas.getContext("2d");
