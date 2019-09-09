@@ -1,0 +1,27 @@
+{
+  "name": "memesover9000",
+  "version": "0.0.1",
+  "description": "MemesOver9000 is a meme generator for the web. You can select your most favorite memes and change the text.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch input.scss style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lmachens/memesOver9000.git"
+  },
+  "keywords": [
+    "Memes",
+    "Canvas"
+  ],
+  "author": "Leon Machens",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmachens/memesOver9000/issues"
+  },
+  "homepage": "https://github.com/lmachens/memesOver9000#readme",
+  "dependencies": {
+    "sass": "^1.23.0-module.beta.1"
+  }
+}
