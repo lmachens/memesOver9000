@@ -21,7 +21,8 @@
     "url": "https://github.com/lmachens/memesOver9000/issues"
   },
   "homepage": "https://github.com/lmachens/memesOver9000#readme",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "sass": "^1.23.0-module.beta.1"
   }
 }
